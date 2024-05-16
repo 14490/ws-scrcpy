@@ -90,6 +90,7 @@ export const common = () => {
         },
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],
+            fallback: { "events": require.resolve('events') }
         },
     };
 };
